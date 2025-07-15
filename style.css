@@ -375,4 +375,58 @@ nav ul {
 .card-equipe:hover {
   transform: scale(1.05);
 }
+/* Container da equipe */
+.grid-equipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
 
+/* Cada card da equipe */
+.card-equipe {
+  width: 200px;
+  min-height: 330px;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+/* Imagem dos membros */
+.card-equipe img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Nome */
+.card-equipe h3 {
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  margin: 5px 0;
+  color: #3cb043; /* Verde vibrante */
+}
+
+/* Cargo */
+.card-equipe p {
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  color: #ccc;
+}
+
+/* Hover */
+.card-equipe:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.5); /* leve brilho laranja */
+}
